@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>SELF | ЛИЦЕЙ НИУ ВШЭ</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="icon" href="https://selflyc.ru/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+
+    <meta name="description" content="SELF - это лицейский фестиваль, где ты сможешь лучше понять себя.">
+    <meta property="og:title" content="SELF Лицей НИУ ВШЭ" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://selflyc.ru/scoreboard" />
+    <meta property="og:image" content="https://selflyc.ru/src/images/SELF_icon_rectangle.png" />
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:description" content="SELF - это лицейский фестиваль, где ты сможешь лучше понять себя.">
+
+
+    <script src="/src/html/components/header.js" defer type="text/javascript"></script>
+    <script src="/src/html/components/footer.js" defer type="text/javascript"></script>
+</head>
+
+<body>
+    <header-component></header-component>
+
+    <div class="sections-SELF">
+        <h1 class="title-SELF">Скорборд</h1>
+        <p class="infotext-SELF">Участвуйте в дневной части и выигрывайте призы!</p>
+
+
+
+        <table class="scoreboard-table-SELF">
+
+            <tbody>
+                <tr>
+                    <th id="names_table" scope="row">
+
+                        <script id="names_table_score" type="x-tmpl-mustache" defer>
+                            {{#users}}
+                        <div> {{user}} </div>
+                        {{/users}}
+                </script>
+                    </th>
+                    <th id="count_table" scope="row" class="scoreboard-table-SELF-separator">
+                        <script id="count_table_score" type="x-tmpl-mustache" defer>
+                            {{#users}}
+                        <div name="point" > {{user}} </div>
+                        {{/users}}
+                </script>
+                    </th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="../../dist/scoreboard.bundle.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>

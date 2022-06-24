@@ -1,0 +1,10 @@
+{
+    "name": "SELF | ЛИЦЕЙ НИУ ВШЭ",
+    "short_name": "SELF ",
+    "theme_color": "#44008d",
+    "background_color": "#ffffff",
+    "display": "standalone",
+    "orientation": "portrait",
+    "scope": "/",
+    "start_url": "/"
+  }

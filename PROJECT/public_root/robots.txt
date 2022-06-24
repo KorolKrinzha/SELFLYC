@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /src/
+Disallow: /dist/
+Disallow: /scoreboard
+Sitemap: https://selflyc.ru/sitemap.xml

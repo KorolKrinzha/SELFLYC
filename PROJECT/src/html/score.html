@@ -1,0 +1,111 @@
+<html lang="en">
+
+<head>
+  <title>SELF | ЛИЦЕЙ НИУ ВШЭ</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/src/css/style.css">
+  <link rel="icon" href="https://selflyc.ru/favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+
+
+
+
+  <script src="/src/html/components/header.js" defer type="text/javascript"></script>
+  <script src="/src/html/components/footer.js" defer type="text/javascript"></script>
+</head>
+
+<body>
+
+  <header-component></header-component>
+  <main>
+    <div class="container -lg">
+
+      <h1 class="title-SELF">SELF | Панель админа</h1>
+      <p class="infotext-SELF">
+        1. Выбери пользователя
+        2. Отметь, сколько баллов нужно отнять
+        3. Подари пользователю приз:)
+      </p>
+
+
+
+      <div class="row justify-content-center mt-4">
+        <div class="col-md-4">
+
+
+
+          <form id="scoreForm">
+            <div class="sign-formSection-SELF">
+
+              <label for="user">Введите фамилию участника для поиска</label>
+              <input type="text" id="userName" placeholder="Фишбейн" required>
+
+
+              <label for="user">Выберите пользователя</label>
+              <select id="userSelect"></select>
+              <script type="text/html" id="userSelectScript">
+                {{#data}}
+                <option value="{{value}}">{{text}}</option>
+                {{/data}}
+              </script>
+
+              </select>
+
+
+
+
+              <!-- <select type="" id="user" name="user"
+             
+            aria-label="Default select example" required>
+                <option disabled selected value>Пользователь | Баллы</option>
+                <option>Матинфо</option>
+                <option>Восток</option>
+                <option>Гум</option>
+                <option>Дизайн</option>
+                <option>ЕН</option>              
+                <option>Математика</option>
+                <option>Психология</option>
+                <option>Соцэк</option>
+                <option>Юр</option>
+                <option>Футуритет</option>
+                <option>Преподаватель</option>
+            </select> -->
+
+              <label for="number">Сколько баллов снять</label>
+              <input type="number" name="eventValue" placeholder="1" required>
+
+
+
+
+            </div>
+            <div class="middle-textSection-SELF">
+              <input type="submit" name="submit" value="Минус баллы" class="sign-button-SELF">
+            </div>
+          </form>
+        </div>
+
+        <div class="middle-textSection-SELF">
+          <a id="successMessage" class="p-2 btn text-success" style="visibility: hidden;"></a>
+        </div>
+
+
+
+      </div>
+    </div>
+  </main>
+
+
+
+  <script src="/dist/score.bundle.js" type="module"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script> -->
+
+
+</body>
+
+</html>

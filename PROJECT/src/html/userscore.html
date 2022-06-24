@@ -1,0 +1,67 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/src/css/style.css">
+  <link rel="icon" href="https://selflyc.ru/favicon.svg" type="image/x-icon">
+
+  <script src="src/html/components/header.js" defer type="text/javascript"></script>
+  <script src="src/html/components/footer.js" defer type="text/javascript"></script>
+
+  <meta property="og:title" content="SELF Лицей НИУ ВШЭ" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://selflyc.ru/userscore" />
+  <meta property="og:image" content="https://selflyc.ru/src/images/SELF_icon.png" />
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="1200">
+
+  <title>SELF</title>
+</head>
+
+<body>
+
+  <header-component></header-component>
+  <main>
+    <div class="EVENTS-textContainer-SELF">
+
+      <h1 class="title-SELF">SELF | Баллы</h1>
+
+
+      <div id="username_target"></div>
+      <script id="username" type="x-tmpl-mustache">
+        <p class="infotext-SELF">Добро пожаловать,  {{ name }}!</p>
+    </script>
+
+      <p class="EVENTS-textDescription-SELF"> Баллов на вашем счету: </p>
+
+      <div id="score_target"></div>
+      <script id="score" type="x-tmpl-mustache">
+        <p class="infonumber-SELF">{{ score }}</p>
+    </script>
+
+
+
+      <p class="infotext-small-SELF">Участвуйте в дневной части, чтобы заработать еще баллов!
+
+        Баллы можно обменять на лицейский мерч и другие призы
+      </p>
+
+
+    </div>
+
+  </main>
+
+
+
+  <script src="/dist/userscore.bundle.js" type="module"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
+
+
+</body>
+
+</html>

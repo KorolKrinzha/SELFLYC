@@ -1,0 +1,247 @@
+<html lang="en">
+
+<head>
+  <title>SELF | ЛИЦЕЙ НИУ ВШЭ</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/src/css/style.css">
+  <link rel="icon" href="https://selflyc.ru/favicon.svg" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="manifest" href="manifest.json">
+
+
+
+  <meta name="description" content="SELF - это лицейский фестиваль, где ты сможешь лучше понять себя.">
+  <meta property="og:title" content="SELF Лицей НИУ ВШЭ" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://selflyc.ru" />
+  <meta property="og:image" content="https://selflyc.ru/src/images/SELF_icon_rectangle.png" />
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:description" content="SELF - это лицейский фестиваль, где ты сможешь лучше понять себя.">
+
+
+  <script src="/src/html/components/header.js" defer type="text/javascript"></script>
+  <script src="/src/html/components/footer.js" defer type="text/javascript"></script>
+  <script src="/src/html/components/table.js" defer type="text/javascript"></script>
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Event",
+      "name": "SELF | ЛИЦЕЙ НИУ ВШЭ",
+      "startDate": "2022-05-14",
+      "endDate": "2022-05-15",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "location": {
+        "@type": "Place",
+        "name": "Лицей НИУ ВШЭ",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "14Ас1 Solyanka Street",
+          "addressLocality": "Moscow",
+          "postalCode": "109028", 
+          "addressRegion": "RU",
+          "addressCountry": "RU"
+        }
+      },
+      "image": [
+        "https://selflyc.ru/src/images/photos/image1.png",
+        "https://selflyc.ru/src/images/photos/image2.png",
+        "https://selflyc.ru/src/images/photos/image3.png"
+       ],
+      "description": "SELF - это лицейский фестиваль, где ты сможешь лучше понять себя.",
+      "organizer": {
+        "@type": "Organization",
+        "name": "Организаторы SELF",
+        "url": "https://vk.com/lycself"
+      }
+    }
+    </script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WRVLPJM3RX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-WRVLPJM3RX');
+  </script>
+
+
+</head>
+
+<body class="d-flex flex-column">
+
+
+
+  <header-component></header-component>
+
+  <!-- ИНФА -->
+
+  <section name="info">
+    <div class="sections-SELF">
+
+
+      <!-- СКРИПТ ДЛЯ МЕНЯЮЩЕГОСЯ ТЕКСТА -->
+      <h1 class="spring-educational-lyceum-festival-SELF">SPRING <span id="word"></span> LYCEUM
+        FESTIVAL</h1>
+
+      <script>
+        let word = document.getElementById('word');
+        let wordsArray = [
+          '<h1 class="spring-educational-lyceum-festival-SELF">EDUCATIONAL</h1>',
+          '<h1 class="spring-educational-lyceum-festival-SELF">ENTERTAINMENT</h1>'
+        ];
+        let wordsIncrease = 0;
+
+        function showText() {
+          word.innerHTML = wordsArray[wordsIncrease];
+
+          word.style.opacity = 1;
+          wordsIncrease++;
+          setTimeout('hideText()', 1500);
+        }
+
+        function hideText() {
+          if (wordsIncrease >= wordsArray.length) {
+            wordsIncrease = 0;
+          }
+          word.style.opacity = 0;
+          setTimeout('showText()', 500);
+        }
+
+        showText();
+      </script>
+
+
+
+
+      <div class="backgroundImage-SELF">
+        <p>
+          <strong>SELF</strong> - это фестиваль, где ты сможешь лучше понять себя.
+          Темой фестиваля является личность во всех ее проявлениях
+
+          <strong>SELF</strong> - это возможность посмотреть на себя с другой стороны
+
+          Такое не пропускают.
+        </p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- РАСПИСАНИЕ -->
+  <section name="events">
+
+    <div class="sections-SELF">
+      <a name="events"></a>
+
+      <h2 class="title-SELF">Расписание</h2>
+      <table-component></table-component>
+
+
+    </div>
+
+  </section>
+
+  <!-- ВОПРОСЫ -->
+  <section name="FAQ">
+    <div class="sections-SELF">
+
+      <h2 class="title-SELF">FAQ</h2>
+
+
+      <div class="FAQ-element-SELF">
+        <div class="d-flex">
+          <p class="question-SELF">Что такое дневной ивент?</p>
+          <a class="collapse-button-SELF" data-bs-toggle="collapse" href="#collapseExample1" role="button"
+            aria-expanded="false" aria-controls="collapseExample">
+            <span class="material-icons">add</span>
+          </a>
+        </div>
+        <div class="collapse" id="collapseExample1">
+          <div class="response-SELF">
+            Дневной ивент SELF - пространство чилла и развлечений.
+            Тебя ждут воркшопы, игры, мастерклассы, перформансы и фуршет.
+
+            Ждём тебя с 15:20 до 17:20 в здании на Солянке!
+          </div>
+        </div>
+      </div>
+
+      <div class="FAQ-element-SELF">
+        <div class="d-flex ">
+          <p class="question-SELF">Что я получаю при участии?</p>
+          <a class="collapse-button-SELF" data-bs-toggle="collapse" href="#collapseExample2" role="button"
+            aria-expanded="false" aria-controls="collapseExample">
+            <span class="material-icons">add</span>
+          </a>
+        </div>
+        <div class="collapse" id="collapseExample2">
+          <div class="response-SELF">
+            За участие в наших активностях вы можете получить:
+            📌 новые интересные навыки
+            📌 баллы, которые вы сможете обменять на мерч лицея в вечерней части
+            📌 знакомства с лицеистами со всех направлений
+            📌 отдых и веселье с друзьями
+
+          </div>
+        </div>
+      </div>
+
+      <div class="FAQ-element-SELF">
+        <div class="d-flex">
+          <p class="question-SELF">Как принять участие?</p>
+          <a class="collapse-button-SELF" data-bs-toggle="collapse" href="#collapseExample3" role="button"
+            aria-expanded="false" aria-controls="collapseExample">
+            <span class="material-icons">add</span>
+          </a>
+        </div>
+        <div class="collapse" id="collapseExample3">
+          <div class="response-SELF">
+            Все просто: смотри расписание и приходи на понравившуюся площадку.
+            ❗️ на некоторые из площадок SELF нужна предварительная регистрация, так как количество мест ограничено
+          </div>
+        </div>
+      </div>
+
+      <div class="FAQ-element-SELF">
+        <div class="d-flex">
+          <p class="question-SELF">Контакты</p>
+          <a class="collapse-button-SELF" data-bs-toggle="collapse" href="#collapseExample4" role="button"
+            aria-expanded="false" aria-controls="collapseExample">
+            <span class="material-icons">add</span>
+          </a>
+        </div>
+        <div class="collapse" id="collapseExample4">
+          <div class="response-SELF">
+            Группа в ВК: <a href="https://vk.com/lycself">https://vk.com/lycself</a>
+            Канал в Телеграме: <a href="https://t.me/lycself">https://t.me/lycself</a>
+            Техподдержка сайта: @korol_krinzha
+
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+  </section>
+
+  <footer-component></footer-component>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+
+
+
+</body>
+
+</html>

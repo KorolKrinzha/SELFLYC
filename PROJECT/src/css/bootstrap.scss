@@ -1,0 +1,419 @@
+// ЦВЕТА
+$primary: #000000;
+$success: #069F7D;
+$danger: #B82085;
+$warning: #F4A255;
+$info: #44008D;
+$bg-light: #F8F3F0;
+$background: #ffff;
+
+// ---ШРИФТЫ---
+@font-face {
+    font-family: PrimaryHeading;
+    src: url(/src/css/fonts/Gropled-Bold.ttf);
+}
+
+@font-face {
+    font-family: PrimaryText;
+    src: url(/src/css/fonts/Rounded\ Elegance.ttf);
+}
+
+// ---БАЗОВЫЕ ТЭГИ---
+html,
+body,
+.wrapper {
+	height: 100%;
+}
+
+h1{
+    @extend .display-1;
+    font-family: PrimaryHeading;
+    white-space: pre-line;
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: PrimaryHeading;
+    white-space: pre-line;
+    //margin-bottom: 0;
+}
+
+p {
+    font-family: PrimaryText;
+    white-space: pre-line;
+    @extend .text-break
+}
+
+header {
+    font-family: PrimaryHeading;
+}
+
+a{
+    font-family: PrimaryText;
+}
+
+u {
+    text-decoration: none;
+    font-family: PrimaryHeading;
+}
+
+b, strong{
+    @extend .text-danger;
+    @extend .fw-bold;
+}
+
+div {
+    font-family: PrimaryText;
+}
+
+span {
+    color: $info
+}
+
+// ---ХЭДЕРЫ И ФУТЕРЫ---
+
+// ХЭДЕР
+.navbar-SELF {
+    @extend .navbar;
+    @extend .navbar-expand-lg;
+    @extend .navbar-light;
+    background-color: $bg-light !important;
+
+
+}
+
+// ФУТЕР
+.footer-SELF {
+    font-family: PrimaryHeading;
+
+    
+    @extend .mt-auto;
+    @extend .align-middle;
+    height: 35px; 
+    line-height: 35px;
+    margin-top: -35px;
+    background-color: $bg-light;
+    
+    bottom: 0px;
+    
+
+    p {
+
+        @extend .text-center;
+        @extend .align-middle;
+        // color: #F4A255;
+    }
+}
+
+// ---ГЛАВНАЯ СТРАНИЦА---
+
+// КОНТЕЙНЕРЫ НА ГЛАВНОЙ СТРАНИЦЕ
+.sections-SELF{
+    @extend .d-flex;
+    @extend .flex-column;    
+    @extend .mx-4;
+    @extend .mt-4;
+}
+
+// МЕРЦАЮЩАЯ НАДПИСЬ НА ГЛАВНОЙ СТРАНИЦЕ
+.spring-educational-lyceum-festival-SELF{
+    font-family: PrimaryHeading;
+    @extend .display-5;
+    margin-bottom: 0;
+    margin-top: 0;
+    
+    
+}
+
+// ПИКЧА СЕЛФА В ИНФЕ
+.backgroundImage-SELF{
+    
+    display: block;
+    position: relative;    
+    background-repeat:no-repeat;
+    background-image: url("/src/svg/SELF_index_info_bg.svg");
+    
+    background-size:contain; //cover
+    background-position: center;
+    height: fit-content;
+    width: fit-content;
+    
+    
+    
+    p{
+        @extend .fs-1;
+        
+        
+    }     
+}
+
+
+// ---FAQ---
+
+// ЭТО ДЛЯ ВЫСОТЫ ЛИНИИ СБОКУ
+$question-height: 20px;
+
+// ВОПРОС
+// НАПРИМЕР: ЧТО ТАКОЕ SELF?
+.question-SELF {    
+    @extend .p-2;
+    @extend .me-auto;
+    
+
+    @extend .align-middle;
+    @extend .fw-bold;    
+    height: $question-height; 
+    line-height: $question-height;
+}
+
+// КНОПКА СБОКУ ДЛЯ ОТВЕТА
+.collapse-button-SELF{
+    @extend .ms-auto;
+    @extend .p-2;
+    @extend .align-middle;   
+    span{
+        color: $primary;
+        line-height:$question-height;
+        @extend .align-middle;
+        @extend .justify-content-center;   
+    }
+}
+
+// ОТВЕТ
+// НАПРИМЕР: SELF - КРУТО
+.response-SELF {
+    @extend .p-2;
+    white-space: pre-line;
+}
+
+// ЦВЕТНАЯ ЛИНИЯ СЛЕВА
+.FAQ-element-SELF {
+    @extend .my-3;
+    @extend .align-items-start;
+    border-left: 3px solid;
+    border-color: $success;
+    
+}
+
+// ---SIGN---
+
+// НАДПИСЬ ВВЕРХУ 
+.title-SELF{
+    @extend .h2;
+    @extend .text-center;
+    @extend .mt-4;
+}
+
+// ТЕКСТ СВЕРХУ 
+// НАПРИМЕР: ДЛЯ БАЛЛОВ ЗАЛОГИНЬСЯ ИЛИ ЭТО СКОРБОРД
+.infotext-SELF{
+    @extend .h4;
+    @extend .text-center;
+    @extend .mt-3;
+    @extend .text-info;
+    white-space: pre-line;
+
+}
+.infotext-small-SELF{
+    @extend .text-center;
+    @extend .m-3;
+    @extend .text-info;
+    @extend .p-2;
+    
+    color: #000000 !important;
+    white-space: pre-line;
+    
+    font-family: PrimaryText;
+}
+
+.infonumber-SELF{
+    @extend .infotext-SELF;
+    @extend .display-3;
+    @extend .text-danger;
+}
+
+// КНОПКА ЗАРЕГАТЬСЯ
+.sign-button-SELF{
+    @extend .m-3;
+    @extend .text-center;
+    @extend .btn;
+    @extend .btn-info;
+    @extend .d-flex;   
+    
+    @extend .justify-content-center;
+}
+
+// ДЛЯ ОКОШЕК В РЕГИСТРАЦИИ. НАПРИМЕР, МЭЙЛ
+.sign-formSection-SELF{
+    @extend .mb-4;
+    
+    label{        
+        @extend .form-label;
+        @extend .mt-3;
+        @extend .text-center;
+
+    }
+    select,
+    input{
+        @extend .text-center;
+        @extend .align-middle;
+        height: 50px; 
+        line-height: 50px;
+    }
+    input{
+        @extend .form-control;
+        
+    }
+    select{
+        @extend .form-select;       
+        
+    }
+}
+
+// КОНТЕЙНЕР ДЛЯ ПРЕДЛОЖЕНИЯ ЛОГИНА
+.middle-textSection-SELF{
+    @extend .d-flex;
+    @extend .flex-column;
+    @extend .justify-content-center;
+    @extend .m-3;
+    @extend .text-center;
+    
+}
+
+// КНОПКА ВОЗВРАТА НА ПРЕДЫДУЩУЮ СТРАНИЦУ
+.sign-returnButton-SELF{
+    @extend .btn;
+    @extend  .btn-success;
+    @extend  .text-warning;
+}
+
+// ДЛЯ ТЕКСТА С ПРЕДЛОЖЕНИЕМ ЛОГИНА
+.small-text{
+    @extend .fs-6;
+    @extend .text-muted;
+}
+
+
+
+// ---ТАБЛИЦЫ---
+
+// СКОРБОРД
+.scoreboard-table-SELF {
+    
+    @extend .table;
+    @extend .justify-content-center;
+    
+
+    @extend .border-color-table;
+    
+    th{
+        border-bottom:1px solid $background !important;
+        
+    }
+    .scoreboard-table-SELF-separator{
+        border-left: 2px solid $primary !important;
+        width: 25%;
+    }
+
+
+    table {        
+        white-space: nowrap;
+        
+    }
+
+
+    th {
+        @extend .h4;
+        @extend .text-center;
+        @extend .mt-1;   
+        
+        
+    }
+
+    div{        
+        font-family: PrimaryText;
+        border-bottom: 2px solid $primary;
+              
+    }
+}
+
+// ШАБЛОН ДЛЯ РАСКРАСКИ ЛИНИЙ В ТАБЛИЦАХ 
+.border-color-table{
+    th{
+        border-top:1px solid  $background;
+        border-bottom:1px solid $warning;
+            
+    }
+    td{
+        border-top:1px solid rgb(255, 255, 255);
+        border-bottom:1px solid rgb(255, 255, 255);        
+    }
+    tr{
+        border-top:1px solid rgb(255, 255, 255);
+        border-bottom:1px solid rgb(255, 255, 255);   
+    }
+}
+
+// ТАБЛИЦА НА ГЛАВНОЙ СТРАНИЦЕ
+.events-table-SELF {
+    @extend .table;
+    @extend .justify-content-center;
+    @extend .border-color-table;  
+
+    tbody {
+        th {
+            color: $info;
+            @extend .h4;
+            @extend .text-center;
+            @extend .mt-4;            
+            
+        }
+
+        td {
+            color: $primary;
+            @extend .text-center;
+
+            
+            @extend .align-middle;
+
+
+            @extend .p2 !optional;
+            @extend .mb-4;
+            font-family: PrimaryText;
+            white-space: pre-line;
+            width: 50%;
+        }
+    }
+}
+
+// ---ИВЕНТЫ---
+.EVENTS-textContainer-SELF{
+    @extend .row;
+    @extend .justify-content-center;
+    @extend .mt-4;
+
+    
+    
+}
+
+.EVENTS-textTitle-SELF{
+    @extend .h2;
+    @extend .text-center;
+    @extend .mt-5;
+    @extend .text-success;
+    font-family: PrimaryHeading
+}
+
+.EVENTS-textDescription-SELF{
+    @extend .lead;
+    @extend .text-center;
+    @extend .mt-3;
+    @extend .text-success;
+}
+
+
+// ИМПОРТ БИБЛИОТЕКИ СО ВСЕМИ КЛАССАМИ
+// ВАЖНО!!! НЕ УДАЛЯТЬ СТРОКУ
+@import "../../node_modules/bootstrap/scss/bootstrap.scss"

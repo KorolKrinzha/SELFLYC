@@ -1,0 +1,117 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/src/css/style.css">
+  <link rel="icon" href="https://selflyc.ru/favicon.svg" type="image/x-icon">
+
+  <script src="src/html/components/header.js" defer type="text/javascript"></script>
+  <script src="src/html/components/footer.js" defer type="text/javascript"></script>
+
+  <meta property="og:title" content="SELF Лицей НИУ ВШЭ" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://selflyc.ru/sign" />
+  <meta property="og:image" content="https://selflyc.ru/src/images/SELF_icon.png" />
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="1200">
+
+  <title>SELF</title>
+</head>
+
+<body>
+
+  <header-component></header-component>
+  <main>
+    <div class="container -lg">
+
+      <h1 class="title-SELF">SELF | Регистрация</h1>
+      <p class="infotext-SELF">Для получения баллов
+        вам необходимо зарегистрироваться <b>под настоящим именем и фамилией</b></p>
+
+
+
+      <div class="row justify-content-center mt-4">
+        <div class="col-md-4">
+          <form class="signup" class="bg-primary">
+
+            <div class="sign-formSection-SELF">
+              <label for="surname">Фамилия</label>
+              <input type="text" name="surname" placeholder="Фишбейн" required>
+
+
+              <label for="name">Имя</label>
+              <input type="text" name="name" placeholder="Дмитрий" required>
+
+              <label for="grade">Направление</label>
+              <select type="" name="grade" aria-label="Default select example" required>
+                <option disabled selected value>SELF</option>
+                <option>Матинфо</option>
+                <option>Восток</option>
+                <option>Гум</option>
+                <option>Дизайн</option>
+                <option>ЕН</option>
+                <option>Математика</option>
+                <option>Психология</option>
+                <option>Соцэк</option>
+                <option>Матэк</option>
+                <option>Юр</option>
+                <option>Футуритет</option>
+                <option>Преподаватель</option>
+
+              </select>
+
+              <label for="email">Мэйл</label>
+              <input type="email" name="email" placeholder="example@lyceum.ru" required>
+
+              <label for="password">Пароль</label>
+              <input type="password" name="password" placeholder=">5 символов" required>
+
+
+
+            </div>
+
+            <div class="middle-textSection-SELF">
+              <input type="submit" name="submit" value="Зарегистрироваться" class="sign-button-SELF">
+              <p class="small-text">Уже зарегистрированы?
+                <a href="/login">Выполните вход</a>
+              </p>
+            </div>
+          </form>
+
+
+
+        </div>
+        <div class="middle-textSection-SELF">
+          <a id="returntoPage" class="sign-returnButton-SELF" style="visibility: hidden;"></a>
+        </div>
+        <div class="my-3 mb-3  text-center">
+          <a id="errorMessage" class="p-2 btn text-danger" style="visibility: hidden;"></a>
+        </div>
+
+
+      </div>
+    </div>
+
+
+
+
+
+
+
+  </main>
+  <!-- <footer-component></footer-component> -->
+
+
+
+  <script src="/dist/sign.bundle.js" type="module"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+
+
+</body>
+
+</html>
